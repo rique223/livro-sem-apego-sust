@@ -1,0 +1,31 @@
+extends ../main
+
+
+block vars
+    - title = 'Login'
+    - canonical = "http://livrosemapego.com.br/login"
+
+block content
+
+    section.title-main.-alone
+        h1.title.-line Acesse sua Conta :)
+    
+    section.login-page
+        
+        login
+            img( src = 'img/preloader/login.png' class = 'preloader' )
+        
+        //- .login-social.-border
+        //-     .item.-fb: svg: use( xlink:href = 'img/svg.svg#icon-fb' )   
+        //-     .item.-gg: svg: use( xlink:href = 'img/svg.svg#icon-gg' )   
+
+        a.register( href = 'criar-conta' )  Ainda não possui uma conta? <strong>Criar Conta</strong>
+
+
+
+
+
+
+
+
+    

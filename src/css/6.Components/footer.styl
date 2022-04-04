@@ -1,0 +1,59 @@
+
+
+footer
+    background-image linear-gradient(to right, initialGradient, finalGradient)
+    text-align center
+    padding-top 30px
+    width 100%
+
+    @media ( min-width 410px )
+        position absolute
+        bottom 0
+        left 0
+
+    svg
+        height 55px
+        width 49px
+
+    > .menu-nav
+        color #fff
+        margin-top 20px
+
+        > .item
+            margin-bottom 10px
+
+    > .copyright
+        background purplishGrey
+        display block
+        color #bfaadd
+        font 300 12px 'Museo'
+        padding 20px
+        margin-top 20px
+        width 100%
+
+        span
+            color error
+            font-size 16px
+
+        a
+            color blush
+
+            &:hover
+                color blushHover
+                text-decoration underline
+
+    > .social
+        margin 20px 0
+        text-align center
+
+        a
+            display inline-block
+            margin 0 5px
+            transition opacity 0.3s
+
+            &:hover
+                opacity 0.8
+
+            svg
+                height 22px
+                width 22px

@@ -1,0 +1,20 @@
+extends ../main
+
+
+block vars
+    - title = 'Painel do Usuário'
+    - bodyjs = 'User'
+
+
+block content
+
+    include ../includes/user-panel-title
+    section.user-panel
+
+        panel-aside
+            img( src = 'img/preloader/aside-panel.jpg' class = 'preloader' )
+
+        panel-dashboard
+            img( src = 'img/preloader/content-panel.png' class = 'preloader' )
+
+           

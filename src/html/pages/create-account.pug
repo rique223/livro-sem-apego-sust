@@ -1,0 +1,31 @@
+extends ../main
+
+
+block vars
+    - title = 'Criar Conta'
+    - canonical = "http://livrosemapego.com.br/criar-conta"
+
+block content
+
+    section.title-main.-alone
+        h1.title Faça parte desse Projeto!
+        p.desc Crie sua conta abaixo e ajude quem esteja precisando de um livro :)
+    
+    section.create-account
+
+        //- .login-social
+        //-     h2.subtitle Crie sua conta com:
+        //-     .item.-fb: svg: use( xlink:href = 'img/svg.svg#icon-fb' )   
+        //-     .item.-gg: svg: use( xlink:href = 'img/svg.svg#icon-gg' ) 
+        //-     .or ou
+
+
+        //- src/vue/src/components/Register
+        create-account
+            img( src = 'img/preloader/create-account.png' class = 'preloader' )
+
+        
+
+
+
+        

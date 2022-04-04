@@ -1,0 +1,47 @@
+
+
+.btn-main
+    background-color blush
+    border-radius 8px
+    color #fff
+    cursor pointer
+    font 300 16px 'Museo'
+    transition background 0.4s
+    padding 10px 16px
+
+    &:hover
+        background-color blushHover
+
+    &.-inside
+        float right
+        border-radius 0
+        border-top-right-radius 8px
+        border-bottom-right-radius 8px
+        height 100%
+        padding 0 25px
+
+        @media ( max-width 510px )
+            padding 0 20px
+            font-size 30px
+
+        &:after
+            content attr(data-text)
+
+            @media ( max-width 510px )
+                content '>'
+
+    &.-full
+        width 100%
+
+    
+    
+    &.-disabled
+        opacity 0.5
+        pointer-events none
+
+
+    &.-sending
+        opacity 0.8
+        pointer-events none
+
+

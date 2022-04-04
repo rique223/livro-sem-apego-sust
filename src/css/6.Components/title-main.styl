@@ -1,0 +1,100 @@
+
+
+.title-main
+    background linear-gradient(to right, #9d50bb, #6e48aa)
+    color #fff
+    overflow hidden
+    text-align center
+    position relative
+    width 100%
+
+    @media ( min-width 850px )
+        padding 170px 20px 165px
+
+        &.-alone
+            padding 120px 20px 85px
+
+    @media ( max-width 849px )
+        padding 100px 20px 80px
+
+        &.-alone
+            padding-bottom 50px
+
+    &.-home:before
+        background url(../img/header-woman-bg.png) 0 0 no-repeat
+        content ''
+        position absolute
+        left calc(50% + 300px)
+        top -75px
+        transform translateX(-50%)
+        height 544px
+        width 597px
+
+        @media ( max-width 850px )
+            display none
+
+    > .title
+    > .desc
+    > .search-form
+    > .subtitle
+        position relative
+        z-index 3
+
+    > .title
+        color #fff
+        position relative
+        font 700 36px 'Museo'
+        
+        @media ( max-width 640px )
+            font-size 29px
+
+
+    > .subtitle
+        font-weight 300
+        font-size 20px
+        margin-top 10px 
+
+    > .-line::after
+        background-color blush
+        border-radius 30px
+        content ''
+        position absolute
+        bottom -20px
+        left 50%
+        transform translateX(-50%)
+        height 4px
+        width 42px
+
+    > .desc
+        margin-top 10px
+        font 300 16px 'Museo'
+        position relative
+
+
+        @media ( max-width 510px )
+            padding 0 20px
+
+            br 
+                display none
+
+        // &:after
+        //     background-color blush
+        //     border-radius 30px
+        //     content ''
+        //     position absolute
+        //     bottom -20px
+        //     left 50%
+        //     transform translateX(-50%)
+        //     height 4px
+        //     width 42px 
+
+
+    .btn-main
+        cursor pointer
+        display inline-block
+        margin-top 30px
+        width 200px
+        font-weight bold
+        padding 11px 16px
+        font-size 18px
+        position relative

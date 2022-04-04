@@ -1,0 +1,172 @@
+
+
+.form-styl
+    position relative
+    text-align left
+    display flex
+    justify-content flex-start
+    flex-wrap wrap
+    width 100%
+
+    &.-sticky
+        @media ( min-width 1160px ) 
+            position sticky
+            top 20px
+
+    > .forgetpass
+        color greyish
+        cursor pointer
+        display inline-block
+        margin-top 10px
+        font 300 14px 'Museo'
+        text-align center
+        width 100%
+
+        &:hover
+            text-decoration underline
+
+    > .btn-main
+        margin-top 20px
+
+
+.field-box
+    margin-bottom 20px
+    width 100%
+
+    &.-small    
+        margin-right 20px
+        width 150px
+
+    &.-medium
+        width 300px
+
+    &.-cep
+
+        > .field
+            display inline-block
+            width 150px
+
+        > a
+            color greyish
+            display inline-block
+            margin-left 15px
+            font 15px 'Museo'
+
+            &:hover
+                text-decoration underline
+
+    
+    &.-picture
+
+        &.-circle
+
+            > .photo
+                border-radius 50%
+
+                > svg
+                    display block
+                    height 100%
+                    width 100%
+
+        > span strong
+            font-weight 300
+            color greyish
+            font-size 13px
+
+        > .photo
+            background #e4e1df
+            display inline-block
+            border-radius 8px
+            object-fit cover
+            height 70px
+            position relative
+            overflow hidden
+            margin 10px 20px 0 0
+            width 70px
+
+            > svg
+                fill #cac5bf
+                position absolute
+                left 50%
+                top 50%
+                transform translate(-50%, -50%)
+                height 20px
+            
+            > img
+            > input
+                position absolute
+                top 0
+                left 0
+                height 100%
+                width 100%
+            
+            > input
+                opacity 0
+                z-index 3
+
+            > img
+                object-fit cover
+                z-index 2
+
+    &.-border
+        border-top  1px solid lightGrey
+        padding-top 30px
+        margin-top 10px
+
+    > .name
+        color purplishGrey
+        display block
+        font 300 16px 'Museo'
+
+        i
+            color greyish
+            font-style normal
+            font-size 14px
+
+    > .field
+        border 1px solid lightGrey
+        background #fff
+        color greyish
+        display block
+        border-radius 8px
+        margin-top 8px
+        font 300 16px 'Museo'
+        padding-left 10px
+        width 100%
+
+        &.-existemail
+        &.-invalid
+            border 1px solid error
+
+        &.-pass
+            width 300px
+
+    > select.field     
+    > input.field 
+        height 40px
+        
+
+    > textarea.field
+        height 100px
+        padding 10px
+
+
+    > .radio
+        display inline-block
+        color greyish
+        font 300 16px 'Museo'
+        margin 10px 10px 0 0
+        
+        > span
+        > input
+            display inline-block
+            vertical-align middle
+
+        > input
+            margin-right 5px
+
+
+    > .error
+        color error
+        margin-top 10px
+        font-size 13px
