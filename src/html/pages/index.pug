@@ -1,0 +1,67 @@
+extends ../main
+
+block vars
+    - title = 'Site de Doação de Livros'
+    - description = 'Livro sem Apego é um Site de Doação de Livros, cadastrados por pessoas solidárias, sem fins lucrativos e com o objetivo de passar conhecimento adiante.'
+    - canonical = "http://livrosemapego.com.br"
+
+
+block content
+
+    // Search 
+    main.title-main.-home
+        h1.title Tá a fim de doar um livro?
+        p.desc Aqui no Livro Sem Apego você cadastra os livros <br>que não precisa mais e passa conhecimento adiante!
+        a.btn-main( href = 'painel' ) Doe agora :)
+
+    
+    // How it Works
+    section.how-works
+        h2.subtitle Entenda como funciona
+        p.desc É muito simples e fácil:
+
+        .process-steps
+
+            .step-box
+                .icon: img( src = 'img/icone-tela-cadastro.png' )
+                h3.name 1
+                p.desc Faça seu cadastro <br>no nosso site
+            
+            .step-box
+                .icon: img( src = 'img/icone-tela-painel.png' )
+                h3.name 2
+                p.desc No seu painel, cadastre todos os livros que deseja doar
+            
+            .step-box
+                .icon: img( src = 'img/icone-tela-livros.png' )
+                h3.name 3
+                p.desc Seus livros serão publicados e ficarão disponíveis para doação
+            
+            .step-box
+                .icon: img( src = 'img/icone-livro-sem-apego.png' )
+                h3.name 4
+                p.desc Pronto! Agora é só esperar algum interessado entrar em contato
+
+        a.btn-main( href = 'painel' ) Doe um livro
+
+    section.need-books
+
+        h2.title Últimos Livros Cadastrados para Doação
+        latest-books
+
+        a.btn-main( href = 'livros' ) Ver mais Livros
+        
+
+    // About Project
+    section.about-block.-home
+        h2.subtitle Sobre o Projeto
+        p.desc 
+            | Livro sem Apego é um site de doação de livros, sem fins lucrativos.
+            | A ideia do projeto surgiu através de uma necessidade de ajudar alguém que esteja 
+            | precisando de um livro, mas não tem condições de comprá-lo ou simplesmente gostaria de ganhá-lo.
+
+        a.btn-main( href = 'sobre' ) Saiba Mais
+
+       
+        
+    

@@ -1,0 +1,96 @@
+
+
+.how-works
+    background-color iceBlue
+    border-bottom 2px solid blush
+    padding 70px 20px
+    text-align center
+    position relative
+    width 100%
+
+    &:before
+        box-shadow 3px -5px 5px -1px rgba(0,0,0,0.05), -3px -5px 5px -1px rgba(0,0,0,0.05)
+        border-top-right-radius 8px
+        border-top-left-radius 8px
+        background-color iceBlue
+        content ''
+        position absolute
+        left 50%
+        height 165px
+        transform translateX(-50%)
+        width 95%
+
+        @media ( min-width 1130px )
+            // padding 0 220px 60px
+            width 1152px
+
+        @media ( min-width 850px )
+            top -80px
+
+        @media ( max-width 849px )
+            top -40px
+            
+    > .subtitle
+    > .desc
+        position relative
+
+    > .subtitle
+        color purplishGrey
+        margin-top -80px
+    
+    > .desc
+        color greyish
+        margin-top 10px
+
+    > .process-steps
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        position relative
+        margin 40px auto 0
+
+        @media ( min-width 1200px )
+            width 1060px
+
+        @media ( max-width 1199px )
+            width 95%
+
+        @media ( max-width 1050px )
+            justify-content space-around
+
+        > .step-box
+            margin-bottom 50px
+
+    
+    > .btn-main
+        display inline-block
+        
+
+.step-box
+    color #959fad
+    width 250px
+
+    > .icon
+        box-shadow 0 0 6px 0 rgba(0, 0, 0, 0.05)
+        background #fff
+        border-radius 50%
+        display inline-flex
+        align-items center
+        justify-content center
+        height 138px
+        width 138px
+
+        > img
+            display inline-block
+            
+            width 85px
+
+
+    > .name
+        font 700 20px 'Museo'
+        margin-top 15px
+    
+    > .desc
+        line-height 1.38
+        margin-top 10px
+
